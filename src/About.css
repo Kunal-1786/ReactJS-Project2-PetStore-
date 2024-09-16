@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------ 
+CSS-for-About-Component
+----------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Readex+Pro:wght@160..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #1d256b;
+  --textColor2: #585858;
+  --hovering: #00c9d5;
+  --bodyColor: #faf0dd;
+  --mainfont1: "Fredoka", sans-serif;
+  --mainfont2: "Readex Pro", sans-serif;
+}
+
+/* ------------------------------------------------------------ 
+About-CSS
+----------------------------------------------------------------
+*/
+.about-section {
+  background-color: var(--bodyColor);
+}
+.about-holder{
+    margin: 0 auto !important;
+}
+.about-title-1 {
+  font-size: 34px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.about-title-2 {
+  font-size: 28px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  font-weight: 700;
+  padding-top: 30px;
+}
+.about-text-2 {
+  font-size: 16px;
+  font-family: var(--mainfont2);
+  color: var(--textColor2);
+}
+
+/* ------------------------------------------------------------ 
+Media-Rules
+----------------------------------------------------------------
+*/
+
+/* Tablet View (min-width: 992px) */
+@media (min-width: 992px) {
+  .about-title-1 {
+    font-size: 50px;
+  }
+  .about-title-2 {
+    font-size: 32px;
+  }
+}
+/* Tablet View (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .about-holder {
+    margin: 0 auto !important;
+    width: 100%;
+  }
+  .about-holder-part-2 {
+    margin-top: 100px !important;
+  }
+}

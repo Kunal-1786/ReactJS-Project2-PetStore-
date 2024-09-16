@@ -1,0 +1,127 @@
+/* ------------------------------------------------------------ 
+CSS-for-Contact-Component
+----------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Readex+Pro:wght@160..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #1d256b;
+  --textColor2: #585858;
+  --hovering: #00c9d5;
+  --bodyColor: #faf0dd;
+  --mainfont1: "Fredoka", sans-serif;
+  --mainfont2: "Readex Pro", sans-serif;
+}
+
+/* ------------------------------------------------------------ 
+Contact-CSS
+----------------------------------------------------------------
+*/
+.contact-section {
+  background-color: var(--bodyColor);
+}
+.contact-title-1 {
+  font-size: 34px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.contact-title-2 {
+  font-size: 28px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  font-weight: 700;
+  padding-top: 30px;
+}
+.contact-text-2 {
+  font-size: 16px;
+  font-family: var(--mainfont2);
+  color: var(--textColor2);
+}
+.input-holder {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.contact-inputs {
+  padding: 15px;
+  color: var(--textColor2);
+  font-family: var(--mainfont2);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--textColor2);
+}
+.contact-input2 {
+  padding-bottom: 80px;
+}
+.contact-btn {
+  margin: 0 auto !important;
+}
+.contact-title-3 {
+  font-size: 20px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  font-weight: 700;
+  padding-top: 10px;
+}
+.contact-text-3 {
+  font-size: 16px;
+  color: var(--textColor2);
+  font-family: var(--mainfont2);
+}
+.contact-icons {
+  font-size: 24px;
+  background-color: #efeee8;
+  border: 2px solid #efeee8;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 20px;
+}
+.contact-part-holder {
+  margin: 0 auto !important;
+}
+/* ------------------------------------------------------------ 
+Media-Rules
+----------------------------------------------------------------
+*/
+/* Tablet View (min-width: 768px) */
+@media (min-width: 768px) {
+  .contact-inputs {
+    margin-right: 15px;
+  }
+}
+
+/* Tablet View (min-width: 992px) */
+@media (min-width: 992px) {
+  .contact-title-1 {
+    font-size: 50px;
+  }
+  .contact-title-2 {
+    font-size: 32px;
+  }
+  .contact-inputs {
+    padding-right: 90px;
+  }
+}
+/* Tablet View (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .input-holder {
+    margin-top: 0px;
+  }
+  .contact-inputs {
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}

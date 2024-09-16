@@ -1,0 +1,99 @@
+/* ------------------------------------------------------------ 
+CSS-for-Shop-Component
+----------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Readex+Pro:wght@160..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #1d256b;
+  --textColor2: #585858;
+  --hovering: #00c9d5;
+  --bodyColor: #faf0dd;
+  --mainfont1: "Fredoka", sans-serif;
+  --mainfont2: "Readex Pro", sans-serif;
+}
+
+/* ------------------------------------------------------------ 
+Shop-CSS
+----------------------------------------------------------------
+*/
+.shop-section {
+  background-color: var(--bodyColor);
+}
+.shop-title-1 {
+  font-size: 34px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.shop-text-1 {
+  font-size: 16px;
+  font-family: var(--mainfont2);
+  color: var(--textColor2);
+}
+.shop-title-2 {
+  font-size: 28px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  font-weight: 700;
+  padding-top: 30px;
+  text-align: center;
+}
+.shop-img-container-1 {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.shop-img-holder-1 {
+  width: 47%;
+  height: 50%;
+  background-color: #d2faff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.shop-img-holder-1:hover {
+  background-color: #ffa028;
+}
+.shop-img-holder-1.active {
+  background-color: #ffa028;
+}
+.shopimgs1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* ------------------------------------------------------------ 
+Media-Rules
+----------------------------------------------------------------
+*/
+/* Tablet View (min-width: 768px) */
+@media (min-width: 768px) {
+  .shop-img-holder-1 {
+    width: 22%;
+  }
+}
+
+/* Tablet View (min-width: 992px) */
+@media (min-width: 992px) {
+  .shop-title-1 {
+    font-size: 50px;
+  }
+  .shop-img-holder-1 {
+    width: 15%;
+    height: 50%;
+  }
+  .shop-img-container-1 {
+    gap: 40px;
+  }
+}

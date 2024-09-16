@@ -33,13 +33,13 @@ const CountdownTimer = ({ targetDate }) => {
     <div className="countdown-timer">
       {timeLeft.days !== undefined && (
         <div>
-          <p>
+          <p className="timer-number">
             <span>{timeLeft.days} : </span>
             <span>{timeLeft.hours} : </span>
             <span>{timeLeft.minutes} : </span>
             <span>{timeLeft.seconds}</span>
           </p>
-          <p>
+          <p className="timer-name">
             {" "}
             <span>Days : </span>
             <span>Hours : </span>

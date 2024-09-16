@@ -1,0 +1,128 @@
+/* ------------------------------------------------------------ 
+CSS-for-Blog-Component
+----------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Readex+Pro:wght@160..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #1d256b;
+  --textColor2: #585858;
+  --hovering: #00c9d5;
+  --bodyColor: #faf0dd;
+  --mainfont1: "Fredoka", sans-serif;
+  --mainfont2: "Readex Pro", sans-serif;
+}
+
+/* ------------------------------------------------------------ 
+Blog-CSS
+----------------------------------------------------------------
+*/
+.blog-section {
+  background-color: var(--bodyColor);
+}
+.blog-holder {
+  margin: 0 auto !important;
+}
+.blog-title-1 {
+  font-size: 34px;
+  font-family: var(--mainfont1);
+  color: var(--textColor);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.card-holder{
+    margin-left: 0 !important;
+}
+.card {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card-img-top:hover {
+  transform: scale(1.04);
+}
+.card-title {
+  color: var(--textColor) !important;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: var(--mainfont1);
+}
+.card-text {
+  font-family: var(--mainfont2) !important;
+  color: var(--textColor2);
+}
+.btn {
+  background-color: var(--textColor) !important;
+  font-weight: 400;
+  font-family: var(--mainfont2) !important;
+  cursor: pointer !important;
+}
+
+.blog-img-holder-9 {
+  width: 100%;
+  height: 100%;
+}
+.blogimg9 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.blog-text-2 {
+  font-size: 24px;
+  color: var(--textColor);
+  font-family: var(--mainfont1);
+  font-weight: 600;
+  text-align: center;
+}
+.tags-holder {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog-tags {
+  margin-bottom: 10px;
+}
+.blog-gal-img-holder {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+.blog-gal-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 5px solid white;
+}
+/* ------------------------------------------------------------ 
+Media-Rules
+----------------------------------------------------------------
+*/
+
+/* Tablet View (min-width: 768px) */
+@media (min-width: 768px) {
+}
+/* Tablet View (min-width: 992px) */
+@media (min-width: 992px) {
+  .blog-title-1 {
+    font-size: 50px;
+  }
+}
+/* Tablet View (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .blog-gallary-holder {
+    margin-top: 150px !important;
+  }
+}
